@@ -2,6 +2,16 @@
 
 ## master (unreleased)
 
+### Bug fixes
+
+* [#7882](https://github.com/rubocop-hq/rubocop/pull/7882): Fix `Style/CaseEquality` when `AllowOnConstant` is `true` and the method receiver is implicit. ([@rafaelfranca][])
+
+### Changes
+
+* [#7860](https://github.com/rubocop-hq/rubocop/issues/7860): Change `AllowInHeredoc` option of `Layout/TrailingWhitespace` to `true` by default. ([@koic][])
+
+## 0.82.0 (2020-04-16)
+
 ### New features
 
 * [#7867](https://github.com/rubocop-hq/rubocop/pull/7867): Add support for tabs in indentation. ([@DracoAter][])
@@ -24,10 +34,13 @@
 * [#7834](https://github.com/rubocop-hq/rubocop/issues/7834): Fix `Lint/UriRegexp` to register offense with array arguments. ([@tejasbubane][])
 * [#7841](https://github.com/rubocop-hq/rubocop/issues/7841): Fix an error for `Style/TrailingCommaInBlockArgs` when lambda literal (`->`) has multiple arguments. ([@koic][])
 * [#7842](https://github.com/rubocop-hq/rubocop/issues/7842): Fix a false positive for `Lint/RaiseException` when Exception without cbase specified under the namespace `Gem` by adding  `AllowedImplicitNamespaces` option. ([@koic][])
+* `Style/IfUnlessModifier` does not infinite-loop when autocorrecting long lines which use if/unless modifiers and have multiple statements separated by semicolons. ([@alexdowad][])
+* [rubocop-hq/rubocop-rails#127](https://github.com/rubocop-hq/rubocop-rails/issues/127): Use `ConfigLoader.default_configuration` for the default config. ([@hanachin][])
 
 ### Changes
 
-* [#7869](https://github.com/rubocop-hq/rubocop/pull/7869): **(BREAKING)** Drop support for Ruby 2.3. ([@koic][])
+* **(Breaking)** Renamed `Layout/Tab` cop to `Layout/IndentationStyle`. ([@DracoAter][])
+* [#7869](https://github.com/rubocop-hq/rubocop/pull/7869): **(Breaking)** Drop support for Ruby 2.3. ([@koic][])
 
 ## 0.81.0 (2020-04-01)
 
@@ -4458,3 +4471,4 @@
 [@knu]: https://github.com/knu
 [@saurabhmaurya15]: https://github.com/saurabhmaurya15
 [@DracoAter]: https:/github.com/DracoAter
+[@DracoAter]: https://github.com/DracoAter
