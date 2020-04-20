@@ -2,13 +2,21 @@
 
 ## master (unreleased)
 
+### New features
+
+* [#7895](https://github.com/rubocop-hq/rubocop/pull/7895): Include `.simplecov` file by default. ([@robotdana][])
+
 ### Bug fixes
 
 * [#7882](https://github.com/rubocop-hq/rubocop/pull/7882): Fix `Style/CaseEquality` when `AllowOnConstant` is `true` and the method receiver is implicit. ([@rafaelfranca][])
+* [#7790](https://github.com/rubocop-hq/rubocop/issues/7790): Fix `--parallel` and `--ignore-parent-exclusion` combination. ([@jonas054][])
+* [#7881](https://github.com/rubocop-hq/rubocop/issues/7881): Fix `--parallel` and `--force-default-config` combination. ([@jonas054][])
+* [#7635](https://github.com/rubocop-hq/rubocop/issues/7635): Fix a false positive for `Style/MultilineWhenThen` when `then` required for a body of `when` is used. ([@koic][])
 
 ### Changes
 
 * [#7860](https://github.com/rubocop-hq/rubocop/issues/7860): Change `AllowInHeredoc` option of `Layout/TrailingWhitespace` to `true` by default. ([@koic][])
+* [#7094](https://github.com/rubocop-hq/rubocop/issues/7094): Clarify alignment in `Layout/MultilineOperationIndentation`. ([@jonas054][])
 
 ## 0.82.0 (2020-04-16)
 

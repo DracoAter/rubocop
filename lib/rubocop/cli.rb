@@ -35,8 +35,8 @@ module RuboCop
       if @options[:init]
         run_command(:init)
       else
-        validate_options_vs_config
         act_on_options
+        validate_options_vs_config
         apply_default_formatter
         execute_runners
       end
