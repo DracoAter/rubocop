@@ -12,6 +12,9 @@
 * [#7790](https://github.com/rubocop-hq/rubocop/issues/7790): Fix `--parallel` and `--ignore-parent-exclusion` combination. ([@jonas054][])
 * [#7881](https://github.com/rubocop-hq/rubocop/issues/7881): Fix `--parallel` and `--force-default-config` combination. ([@jonas054][])
 * [#7635](https://github.com/rubocop-hq/rubocop/issues/7635): Fix a false positive for `Style/MultilineWhenThen` when `then` required for a body of `when` is used. ([@koic][])
+* [#7905](https://github.com/rubocop-hq/rubocop/pull/7905): Fix an error when running `rubocop --only` or `rubocop --except` options without cop name argument. ([@koic][])
+* [#7903](https://github.com/rubocop-hq/rubocop/pull/7903): Fix an incorrect autocorrect for `Style/HashTransformKeys` and `Style/HashTransformValues` cops when line break before `to_h` method. ([@diogoosorio][], [@koic][])
+* [#7899](https://github.com/rubocop-hq/rubocop/issues/7899): Fix an infinite loop error for `Layout/SpaceAroundOperators` with `Layout/ExtraSpacing` when using `ForceEqualSignAlignment: true`. ([@koic][])
 
 ### Changes
 
@@ -4480,3 +4483,4 @@
 [@saurabhmaurya15]: https://github.com/saurabhmaurya15
 [@DracoAter]: https:/github.com/DracoAter
 [@DracoAter]: https://github.com/DracoAter
+[@diogoosorio]: https://github.com/diogoosorio
